@@ -1,28 +1,18 @@
 ﻿@inject NavigationManager Navigation
 
-<div class="topnav" id="myTopnav">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#partners">Partners</a>
-    <a href="#contact">Contact</a>
-
-    <button class="icon mobile-only" @onclick="NavigateMobilMenu">
+<div class="topnav @(menuOpen ? "responsive" : "")" id="myTopnav">
+    <a href="#home" @onclick="CloseMenu">Home</a>
+    <a href="#about" @onclick="CloseMenu">About</a>
+    <a href="#pricing" @onclick="CloseMenu">Pricing</a>
+    <a href="#partners" @onclick="CloseMenu">Partners</a>
+    <a href="#contact" @onclick="CloseMenu">Contact</a>
+    <button class="icon mobile-only" @onclick="ToggleMenu">
         <i class="fa fa-bars"></i>
     </button>
 </div>
 
 @code {
     private bool menuOpen = false;
-    private void ToggleMenu()
-    {
-        menuOpen = !menuOpen;
-        StateHasChanged();
-    }
-
-
-    private void NavigateMobilMenu()
-    {
-        Navigation.NavigateTo("/mobilmenu");
-    }
+    private void ToggleMenu() => menuOpen = !menuOpen;
+    private void CloseMenu() => menuOpen = false;
 }
