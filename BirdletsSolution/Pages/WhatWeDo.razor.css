@@ -1,0 +1,46 @@
+﻿.info-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+}
+
+    .info-card:hover {
+        transform: translateY(-10px);
+    }
+
+.card {
+    border-radius: 30px;
+    -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    border: none;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+    .card .card-block {
+        padding: 25px;
+    }
+
+.custom-card-wrapper {
+    background-color: rgba(255, 255, 255, 0.85); /* világos fehér háttér 85% átlátszósággal */
+    border-radius: 40px; /* lekerekített sarkok */
+    padding: 2rem; /* belső margó */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* kis árnyék a lebegéshez */
+    backdrop-filter: blur(0.5px); /* opcionális: üveges hatás, modern böngészőkben */
+}
+
+.order-card {
+    color: #fff;
+}
+
+    .order-card i {
+        font-size: 26px;
+    }
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}

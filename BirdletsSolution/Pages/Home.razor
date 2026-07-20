@@ -1,0 +1,46 @@
+﻿@page "/"
+<PageTitle>Home</PageTitle>
+
+<section id="home">
+    <div class="container-fluid mb-5 mt-0">
+        <div class="row">
+            <div class="col-12">
+                <div class="featured-post px-3 py-4 rounded-4">
+                    <div class="row align-items-center gy-4">
+
+                        <!-- Logó -->
+                        <div class="col-12 col-md-5 d-flex justify-content-center justify-content-md-end  pb-4">
+                            <a class="navbar-brand" href="/">
+                                <img src="Images/birdlet_logo_transparent.png" alt="Logo" class="img-fluid" style="max-height: 150px;" />
+                            </a>
+                        </div>
+
+                        <!-- Függőleges vonal csak desktopon -->
+                        <div class="d-none d-md-block" style="width:16px; padding:0;">
+                            <div style="width:2px; height:100%; background-color:#F14C93; min-height:400px; margin:0 auto;"></div>
+                        </div>
+
+                        <!-- Szöveg -->
+                        <div class="col-12 col-md-6 text-center text-md-start ps-md-0">
+                            <h1 class="leadText"> Effortless Customer Support That Scales With You</h1>
+                            <h1 class="mb-3" style="color: #F14C93;">Welcome to Birdlet Solutions!</h1>
+                            <div class="leadTextCard">
+                                <p class="lead" style="color: #F677AA;">
+                                    Running an e-commerce or dropshipping business?<br>
+                                    We’ve got your back. At Birdlet Solutions, we offer compact, transparent, and fully-managed customer support — so you can focus on growing your business, while we handle the rest.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<BirdletsSolution.Pages.WhatWeDo/>
+<BirdletsSolution.Pages.About />
+<BirdletsSolution.Pages.Pricing />
+<BirdletsSolution.Pages.Partners />
+<BirdletsSolution.Pages.Footer />

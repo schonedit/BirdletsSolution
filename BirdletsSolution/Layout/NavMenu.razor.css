@@ -1,0 +1,63 @@
+
+.topnav {
+    overflow: hidden;
+}
+
+    .topnav .icon {
+        float: left;
+        display: block;
+        color: gray;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 17px;
+        background: none;
+        border: none;
+        color: gray;
+        font-size: 24px;
+        padding: 14px 16px;
+        cursor: pointer;
+        display: block;
+    }
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        display: block;
+        color: gray;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        border: none;
+    }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            color: #F14C93;
+        }
+
+    .topnav .icon {
+        float: right;
+        display: block;
+    }
+
+@media screen and (min-width: 650px) {
+    .topnav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+        .topnav .icon {
+            float: right;
+            display: none;
+        }
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). */
+@media screen and (max-width: 600px) {
+    .topnav a {
+        display: none;
+    }
+}

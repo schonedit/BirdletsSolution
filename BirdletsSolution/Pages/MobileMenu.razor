@@ -1,0 +1,28 @@
+﻿@page "/mobilmenu"
+@inject NavigationManager Navigation
+
+<div class="mobile-menu-page">
+    <button class="close-icon" @onclick="NavigateBack">
+        ×
+    </button>
+
+    <nav class="mobile-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#partners">Partners</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</div>
+
+@code {
+    private void CloseMenu()
+    {
+        Navigation.NavigateTo("/");
+    }
+
+    private void NavigateBack()
+    {
+        Navigation.NavigateTo("/");
+    }
+}

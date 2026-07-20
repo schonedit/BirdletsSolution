@@ -1,0 +1,28 @@
+﻿@inject NavigationManager Navigation
+
+<div class="topnav" id="myTopnav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#partners">Partners</a>
+    <a href="#contact">Contact</a>
+
+    <button class="icon mobile-only" @onclick="NavigateMobilMenu">
+        <i class="fa fa-bars"></i>
+    </button>
+</div>
+
+@code {
+    private bool menuOpen = false;
+    private void ToggleMenu()
+    {
+        menuOpen = !menuOpen;
+        StateHasChanged();
+    }
+
+
+    private void NavigateMobilMenu()
+    {
+        Navigation.NavigateTo("/mobilmenu");
+    }
+}

@@ -1,0 +1,26 @@
+.page {
+    position: relative;
+    z-index: 1;
+}
+
+.hiroSection {
+    position: relative;
+    z-index: 1;
+}
+
+    .hiroSection::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('/Images/header.png');
+        background-repeat: no-repeat;
+        opacity: 0.6;
+        z-index: -1;
+        background-size: 100%;
+    }
+
+@media (max-width: 768px) {
+    .hiroSection::before {
+        background-size: 200%;
+    }
+}

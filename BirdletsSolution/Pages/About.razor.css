@@ -1,0 +1,15 @@
+﻿.icon-circle {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.peek-bird-inline {
+    height: 40px; /* vagy amekkora jól mutat */
+    margin-left: 8px; /* kis térköz a kérdőjel után */
+    vertical-align: middle;
+}
