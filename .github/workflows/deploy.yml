@@ -40,14 +40,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Add .nojekyll
-        run: touch release/wwwroot/.nojekyll
 
       - name: Add CNAME
         run: echo "www.birdlets-solution.com" > release/wwwroot/CNAME
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: release/wwwroot
         
